@@ -8,16 +8,13 @@ int isPrime(int p)
                 return true;
         }
 
-        if (p % 2 == 0)
-        {
-                return false;
-        }
+
         if (p < 1)
         {
                 return false;
         }
 
-        for (int i = 3; i <= p / 2; i++)
+        for (int i = 2; i < p; i++)
         {
                 if (p % i == 0)
                 {
